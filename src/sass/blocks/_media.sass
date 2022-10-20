@@ -137,6 +137,32 @@
 @media (max-width: 768px)
     .container
         max-width: 540px
+    .hamburger
+        display: block
+        position: absolute
+        top: 20px
+        right: 30px
+        width: 30px
+        height: 12px
+        cursor: pointer
+        z-index: 5
+        span
+            display: block
+            width: 30px
+            height: 3px
+            background: #151812
+            margin-bottom: 3px
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: 20px
+                &:nth-child(1)  
+                    transform: rotate(-45deg)
+                    margin-bottom: -2px
+                &:nth-child(2)
+                    display: none 
+                &:nth-child(3)  
+                    transform: rotate(45deg)
     .title
         &_fontsize
             font-size: 22px
@@ -145,6 +171,50 @@
                 margin-top: 10px
         &_consultation
             font-size: 23px
+        &_big
+            margin-top: 10px
+            font-size: 34px
+            line-height: 21px
+        &_subtitle
+            font-size: 20px
+    .header
+        &__btn
+            margin-top: 27px
+        &__info
+            margin-left: 62px
+        &__logo
+            margin-left: 31px
+        &__items
+            flex-wrap: wrap
+        &__item
+            margin-bottom: 20px
+        &__logistic
+            font-size: 18px
+        &__point
+            &::after
+                content: ''
+                width: 237px
+            &::before
+                content: ''
+                width: 237px
+        &__list
+            left: -100%
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            background-color: rgba(37, 51, 60, 0.9)
+            top: 0
+            width: 50%
+            height: 100vh
+            padding: 0
+            z-index: 5
+            transition: 1s all
+            &_active
+                left: 0
+        &__link
+            display: block
+            margin-top: 20px
+            font-size: 18px
     .benefis
         &__wrapper
             grid-template: repeat(8,minmax(65px,auto))/ 500px
@@ -220,6 +290,28 @@
             &-small
                 font-size: 14px
                 margin-top: 7px
+        &_big
+            font-size: 26px
+            line-height: 27px
+            margin-top: 4px
+        &_subtitle
+            margin-top: 7px
+            font-size: 15px
+    .header
+        &__info
+            margin-left: 14px
+        &__logistic
+            font-size: 14px
+        &__point
+            &::after
+                content: ''
+                width: 137px
+            &::before
+                content: ''
+                width: 137px
+        &__icons
+            &_mr
+                margin-right: 60px
     .benefis
         &__wrapper
             grid-template: repeat(8,minmax(65px,auto))/ 300px
@@ -293,6 +385,8 @@
         &__create
             &-logo
                 display: none
+        &__year
+            margin: 0 auto
     
                 
 

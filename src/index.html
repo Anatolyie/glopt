@@ -29,8 +29,15 @@
     <title>Glopt</title>
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="header__wrapper">
 
                 <div class="header__logo">
@@ -38,22 +45,22 @@
                 </div>
 
                 <ul class="header__list">
-                    <li>
+                    <li class="header__list_li">
                         <a href="#" class="header__link">Преимущества</a>
                     </li>
-                    <li> 
+                    <li class="header__list_li"> 
                         <a href="#" class="header__link">Наша работа</a> 
                     </li>
-                    <li>
+                    <li class="header__list_li">
                         <a href="#" class="header__link">Цены </a>
                     </li>
-                    <li>
+                    <li class="header__list_li">
                         <a href="#" class="header__link">Схема работы</a>
                     </li>
-                    <li>
+                    <li class="header__list_li">
                          <a href="#" class="header__link">Отзывы</a>
                     </li>
-                    <li>
+                    <li class="header__list_li">
                         <a href="#" class="header__link header__link_brn">Контакты</a>
                     </li>
                 </ul>
@@ -63,7 +70,7 @@
                     <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                 </div>
 
-                <button class="button header__btn">Перезвоните мне</button>
+                <button data-modal class="button header__btn">Перезвоните мне</button>
             </div>
 
             <div class="header__logistic">Global Opt - логистика полного цикла из Китая в Россию</div>
@@ -94,7 +101,7 @@
                     <div class="header__text">Осуществляем прямые поставки с заводов от двери до двери</div>
                 </div>
                 <div class="header__item">
-                    <div class="header__icons">
+                    <div class="header__icons header__icons_mr">
                         <img src="icons/express_2.png" alt="delivery">
                     </div>
                     <div class="header__text">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг  </div>
@@ -103,7 +110,7 @@
 
             <button class="button button_quote">Получить расчет</button>
         </div>
-    </header>  -->
+    </header> 
 
      <section class="benefis">
         <div class="container">
@@ -238,6 +245,58 @@
             </div>
         </div>
     </section>
+
+    <section class="slider">
+        <div class="container">
+            <h2 class="title">отзывы наших клиентов</h2>
+            <div class="divider"></div>
+            <div class="slider__subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</div>
+
+            <div class="slider__inner">
+                <div class="slider__inner-item">
+                    <img src="img/wooman.png" alt="wooman" class="slider__img">
+                    <div class="slider__descr">
+                        <h3 class="slider__title-small">Анисимова Ольга</h3>
+                        <div class="slider__text">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+                    </div>
+                    <div class="slider__overlay"></div>
+                </div>
+                
+                <div class="slider__inner-item">
+                    <img src="img/wooman.png" alt="wooman" class="slider__img">
+                    <div class="slider__descr">
+                        <h3 class="slider__title-small">Анисимова Ольга</h3>
+                        <div class="slider__text">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+                    </div>
+                    <div class="slider__overlay"></div>
+                </div>
+
+                <div class="slider__inner-item">
+                    <img src="img/wooman.png" alt="wooman" class="slider__img">
+                    <div class="slider__descr">
+                        <h3 class="slider__title-small">Анисимова Ольга</h3>
+                        <div class="slider__text">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+                    </div>
+                    <div class="slider__overlay"></div>
+                </div>
+
+
+                <div class="slider__inner-item">
+                    <img src="img/wooman.png" alt="wooman" class="slider__img">
+                    <div class="slider__descr">
+                        <h3 class="slider__title-small">Анисимова Ольга</h3>
+                        <div class="slider__text">
+                            Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании</div>
+                    </div>
+                    <div class="slider__overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="chaina">
         <div class="container">
@@ -512,7 +571,7 @@
                     <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                 </div>
 
-                <button class="button footer__btn">Перезвоните мне</button>
+                <button data-modal class="button footer__btn">Перезвоните мне</button>
                </div>
             </div>
 
@@ -533,5 +592,25 @@
             </div>
         </div>
     </footer> 
+
+    <section class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#" class="modal__form">
+                    <div data-close class="modal__close">&times</div>
+                    <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                    <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                    <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                    <button data-modal class="btn btn_dark btn_min">Перезвонить мне</button>
+
+                </form>
+            </div> 
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
