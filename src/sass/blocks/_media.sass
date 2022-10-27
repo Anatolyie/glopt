@@ -56,7 +56,10 @@
         &__wrapper
             display: flex
             flex-wrap: wrap
-            justify-content: unset
+            justify-content: unset 
+        &__list
+            &_li
+                border-right: none
         &__info
             font-size: 12px
             padding: 0
@@ -129,6 +132,12 @@
             &-right
                 grid-template-columns: 154px 160px
                 column-gap: 13px
+    .slick
+        &-prev, &-next
+            top: 7%
+            left: 33%
+        &-next
+            left: 63%
 
 
 

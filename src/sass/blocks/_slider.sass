@@ -9,8 +9,6 @@
         margin-bottom: 30px
         text-align: center
     &__inner
-        display: flex
-        justify-content: center
         position: relative
     &__img
         display: block
@@ -22,6 +20,7 @@
             height: 100%
             object-fit: cover
     &__descr 
+        margin: 0 auto
         text-align: center
         margin-top: 19px
     &__title
@@ -37,5 +36,36 @@
         font-size: 14px
         font-weight: 300
         line-height: 22px
-        
+.slick
+    &-prev, &-next
+        position: absolute
+        border: none
+        background-color: #fff
+        top: 12%
+        left: 38%
+    &-next
+        left: 60%
+    &-dots
+        display: flex
+        justify-content: center
+        margin-bottom: 0
+        padding-left: 0
+        margin-top: 20px
+        li
+            list-style-type: none
+            button
+                border: none
+                background-color: #fff
+    &-slide
+        transform: scale(0.6)
+        opacity: 0.3
+        width: 600px
+    &-center
+        transform: scale(1)
+        opacity: 1
+
+
+
+
+
         

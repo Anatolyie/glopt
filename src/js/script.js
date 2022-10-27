@@ -1,4 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
+
+    //Menu
+
     const menu = document.querySelector('.header__list'),
     menuItem = document.querySelectorAll('.header_list_li'),
     hamburger = document.querySelector('.hamburger');
@@ -48,6 +51,33 @@ window.addEventListener('DOMContentLoaded', () => {
                 closeModal();
             }
         });
+
+        // Slider
+
+        $(document).ready(function(){
+            $('.slider__inner').slick({
+                centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                nextArrow: '<button type="button" class="slick-next"><img src="img/right.png" alt="arrow"> </button>',
+                prevArrow: '<button type="button" class="slick-prev"><img src="img/left.png" alt="arrow"> </button>',
+                responsive: [
+                    {
+                      breakpoint: 768,
+                      settings: {
+                        arrows: false,
+                        centerMode: true,
+                        dots: true,
+                        slidesToShow: 1
+                    }
+                }
+            ]
+            });
+        });
+          
+
+
+
 });
 
 
