@@ -3,5 +3,5 @@
 package-lock.json 
 package.json 
 
-.DS_Store
-.jshintrc
+DS_Store
+jshintrc
