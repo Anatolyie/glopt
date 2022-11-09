@@ -75,11 +75,40 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        
-          
+    // Tabs
+
+    // $('.preis__link').each(function(i) {
+    //     $(this).on('click', function(e) {
+    //         e.preventDefault();
+    //         $('.preis__block_content').eq(i).toggleClass('preis__block_content-active');
+    //         $('.preis__block_info').eq(i).toggleClass('preis__block_info-active');
+    //     });
+    // });
 
 
+    // $('.button-back-link').each(function(i) {
+    //     $(this).on('click', function(e) {
+    //         e.preventDefault();
+    //         $('.preis__block_content').eq(i).toggleClass('preis__block_content-active');
+    //         $('.preis__block_info').eq(i).toggleClass('preis__block_info-active');
+    //     });
+    // });
 
+
+   
+
+   function toggleSlide(item) {
+    $(item).each(function(i) {
+        $(this).on('click', function(e) {
+            e.preventDefault();
+            $('.preis__block_content').eq(i).toggleClass('preis__block_content-active');
+            $('.preis__block_info').eq(i).toggleClass('preis__block_info-active');
+        });
+    });
+   }
+
+   toggleSlide('.preis__link');
+   toggleSlide('.button-back-link');
 });
 
 
